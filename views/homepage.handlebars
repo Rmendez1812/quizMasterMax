@@ -9,20 +9,6 @@
 
 <div class="container fade-in-2 mt-5 d-flex justify-content-center">
   <div class="col-md-6">
-    {{#each quizzes as |quiz|}}
-      <div class="quiz col-md-6 mx-auto">
-        <a class="nav-link quiz-item" href="/quizzes/{{quiz.id}}">
-          <h2 class="quiz-title text-dark">{{quiz.category}}</h2>
-          <h5 class="quiz-subtitle text-dark">{{quiz.difficulty}}</h5>
-        </a>
-        <p class="text-secondary fst-italic">
-          Taken by
-          <span class="user">{{quiz.user.name}}</span>
-          Score:
-          <span class="score">{{quiz.score}}</span>
-        </p>
-      </div>
-
-    {{/each}}
+    <!-- Code options to take a quiz (choose category and difficulty) or view quizzes taken and scores -->
   </div>
 </div>
