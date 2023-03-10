@@ -12,13 +12,13 @@
     {{#each quizzes as |quiz|}}
       <div class="quiz col-md-6 mx-auto">
         <a class="nav-link quiz-item" href="/quizzes/{{quiz.id}}">
-          <h2 class="quiz-title text-dark">{{quiz.title}}</h2>
-          <h5 class="quiz-subtitle text-dark">{{quiz.description}}</h5>
+          <h2 class="quiz-title text-dark">{{quiz.category}}</h2>
+          <h5 class="quiz-subtitle text-dark">{{quiz.difficulty}}</h5>
         </a>
         <p class="text-secondary fst-italic">
-          Posted by
+          Taken by
           <span class="user">{{quiz.user.name}}</span>
-          on
+          Score:
           <span class="score">{{quiz.score}}</span>
         </p>
       </div>
