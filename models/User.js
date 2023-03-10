@@ -47,6 +47,10 @@ User.init(
       type: DataTypes.INTEGER,
       allowNull: true,
     },
+    quizInput4: {
+      type: DataTypes.INTEGER,
+      allowNull: true,
+    },
     // Add additional properties for user quiz inputs as needed
   },
   {
