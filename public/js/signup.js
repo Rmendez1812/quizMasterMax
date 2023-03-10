@@ -3,7 +3,7 @@
   const signupFormHandler = async (event) => {
     event.preventDefault();
   
-    const username = document.querySelector('#username-signup').value.trim();
+    //const username = document.querySelector('#username-signup').value.trim();
     const email = document.querySelector('#email-signup').value.trim();
     const password = document.querySelector('#password-signup').value.trim();
   
@@ -17,7 +17,7 @@
       if (response.ok) {
         document.location.replace('/');
         //alert(response.message)
-        console.log(resposnse.message)
+        console.log(response.message)
       } else {
         alert('Failed to sign up.');
         alert(response.message);
