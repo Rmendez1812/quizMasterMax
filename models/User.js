@@ -35,6 +35,23 @@ User.init(
         len: [6],
       },
     },
+    quizInput1: {
+      type: DataTypes.INTEGER,
+      allowNull: true,
+    },
+    quizInput2: {
+      type: DataTypes.INTEGER,
+      allowNull: true,
+    },
+    quizInput3: {
+      type: DataTypes.INTEGER,
+      allowNull: true,
+    },
+    quizInput4: {
+      type: DataTypes.INTEGER,
+      allowNull: true,
+    },
+    // Add additional properties for user quiz inputs as needed
   },
   {
     hooks: {
