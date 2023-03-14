@@ -1,0 +1,13 @@
+<!-- This is a template card for each question of each quiz -->
+<section class="card">
+  <!-- The contents of the question card links to the quiz page using the question ID -->
+  <a href="/question/{{id}}">
+    <!-- The card contains the question as the card header -->
+    <header>{{question}}</header>
+    <!-- In the body of the card, the answers are rendered -->
+    <div class="card-body">
+      <p>{{answers}}</p>
+      <button class="btn" type="submit">Submit</button>
+    </div>
+  </a>
+</section>
