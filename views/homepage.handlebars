@@ -1,3 +1,9 @@
+
+<!--{{#each users as |user| }}
+<div class="row align-center mb-5">
+  <div class="col-md-6">
+    
+
 <!-- This will render in place of the {{{ body }}} tag in main.handlebars -->
 <header class="jumbotron">
   <div class="container d-flex justify-content-center align-items-center">
@@ -5,6 +11,7 @@
       <h1>Quiz Master Max</h1>
       <p class="subheading text-center">A quiz app for developing developers</p>
     </div>
+
   </div>
 </header>
 
@@ -12,4 +19,8 @@
   <div class="col-md-6">
     <!-- Code options to take a quiz (choose category and difficulty) or view quizzes taken and scores -->
   </div>
+
+{{/each}}
+
 </div>
+
