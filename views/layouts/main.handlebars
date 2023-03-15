@@ -50,12 +50,7 @@
       </div>
     </nav>
 
-    <!-- {{{body}}} - below is code for homepage.handlebars -->
-    {{#if logged_in}}
-      <!-- Display user's dashboard/profile/etc with stats and options to take a quiz -->
-    {{else}}
-      <!-- Display login/signup page -->
-    {{/if}}
+    {{{body}}}
 
     {{#if logged_in}}
       <script src="/js/logout.js"></script>

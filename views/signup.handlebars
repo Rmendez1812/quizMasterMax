@@ -1,20 +1,39 @@
-<!-- Form to handle sign up -->
-<h2>Signup </h2>
-  <div class="form-group">
-    <label for="password-signup">password:</label>
-    <input class="form-input" type="password" id="password-signup" />
-  </div>
-    <div class="form-group">
-    <label for="email-signup">email:</label>
-    <input class="form-input" type="text" id="email-signup" />
-  </div>
-    <div class="form-group">
-    <label for="birthdate-signup">birthdate:</label>
-    <input class="form-input" type="text" id="birthdate-signup" />
-  </div>
-  <div class="form-group">
-    <button class="btn btn-primary" type="submit">signup</button>
-  </div>
-</form>
+<!-- Form to handle signup -->
+<div class="container d-flex flex-column col-4">
+  <h1 class="display-5">Sign Up</h1>
 
-<script src="/js/signup.js"></script>
+  <div class="mb-3">
+    <label for="username" class="form-label">Username</label>
+    <input
+      type="text"
+      class="form-control"
+      id="username"
+      placeholder="Enter a username"
+    />
+  </div>
+
+  <div class="mb-3">
+    <label for="emailInput" class="form-label">Email</label>
+    <input
+      type="email"
+      class="form-control"
+      id="emailInput"
+      placeholder="Enter your email address"
+    />
+  </div>
+
+  <div class="mb-3">
+    <label for="passwordInput" class="form-label">Password</label>
+    <input
+      type="password"
+      class="form-control"
+      id="passwordInput"
+      placeholder="Create a password"
+    />
+  </div>
+
+  <div class="d-flex justify-content-end">
+    <button class="btn btn-warning signup-btn">Sign Up</button>
+  </div>
+  <script src="/js/login.js"></script>
+</div>
