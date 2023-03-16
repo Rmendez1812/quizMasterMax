@@ -1,9 +1,13 @@
-<!-- This code should iterate over and display each question and their answers -->
-<div class="container fade-in-2 mt-5 d-flex justify-content-center">
-  <div class="col-md-6">
-<!-- For each question, the quiz-details partial is used to render the question data -->
-{{#each questions as |question|}}
-{{> quiz-details}}
-{{/each}}
-  </div>
-</div>
+<script id="quiz-template" type="text/x-handlebars-template">
+    {{#each questions}}
+    <div class="question">
+        <h2>{{this.question}}</h2>
+        {{#each this.answers}}
+        <input type="radio" name="{{../this.id}}" value="{{this}}">
+        <label>{{this}}</label>
+        {{/each}}
+    </div>
+    {{/each}}
+</script>
+
+const quizTemplate = Handlebars.compile(document.getElementById("quiz-template").innerHTML);
