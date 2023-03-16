@@ -1,6 +1,5 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz Master Max</title>
@@ -20,26 +19,30 @@
 
       {{#if logged_in}}
         <nav>
-          <a href="#"><button class="btn" id="logout">Logout</button></a>
+          <a href="#"><button class="btn" id="logoutBtn">Logout</button></a>
         </nav>
       {{/if}}
     </header>
+    {{#unless logged_in}}
     <nav>
       <a href="/signup"><button class="btn" id="signup">Sign-Up</button></a>
       <a href="/login"><button class="btn" id="login">Login</button></a>
     </nav>
+      {{/unless}}
     <main class="container container-fluid mt-5">
-      <!-- homepage.handlebars is brought in through the {{{ body }}} tag -->
-      {{{body}}}
+      <!-- homepage.handlebars is brought in through the  tag -->
 
+      {{{body}}}
     </main>
     <footer>
 
     </footer>
-
+    {{#if logged_in}}
 
       <script src="/js/logout.js"></script>
+
     {{/if}}
+
   </body>
 
 </html>
