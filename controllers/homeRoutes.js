@@ -22,9 +22,6 @@ router.get('/', withAuth, async (req, res) => {
     res.status(500).json(err);
   }
 
-const router = require("express").Router();
-const { User } = require("../models");
-const withAuth = require("../utils/auth");
 
 router.get("/", async (req, res) => {
   res.render("homepage");
