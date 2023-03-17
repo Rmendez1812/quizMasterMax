@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const { User } = require("../../models");
+const { User} = require("../../models");
 const {sendSignupMail}= require("../../utils/helpers");
 router.post("/login", async (req, res) => {
   try {
@@ -44,7 +44,7 @@ router.post("/logout", (req, res) => {
 
 router.post("/signup", async (req, res) => {
   try {
-    let { email, password, username } = req.body;
+    let { email, password } = req.body;
 
     const count = await User.count({ where: { email: req.body.email } });
     /** req.body
@@ -52,15 +52,13 @@ email:
 'deneme@deneme.com'
 password:
 'password'
-username:
 'testuser' */
     if (count > 0) {
-      res.status(400).json({ message: "Select an other Username" });
+      res.status(400).json({ message: "Select an other email" });
       return;
     }
     // user oluşturulması lazım password bcrypt 'le olacak
     let userObj = await User.create({
-      name: username,
       email: email,
       password: password,
     });

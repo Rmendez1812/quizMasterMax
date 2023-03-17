@@ -17,6 +17,18 @@ const loginFormHandler = async (event) => {
       alert("Failed to log in.");
     }
   }
+<<<<<<< HEAD
+  
+  
+  document
+    .querySelector('.login-form')
+    .addEventListener('submit', loginFormHandler);
+  
+  document
+    .querySelector('.signup-btn')
+    .addEventListener('click', signupbtnHandler);
+  
+=======
 };
 
 const signupbtnHandler = async () => {
@@ -31,3 +43,4 @@ document
 document
   .querySelector(".signup-btn")
   .addEventListener("click", signupbtnHandler);
+>>>>>>> origin/develop
