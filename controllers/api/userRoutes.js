@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const { User } = require("../../models");
+const { User} = require("../../models");
 const {sendSignupMail}= require("../../utils/helpers");
 router.post("/login", async (req, res) => {
   try {
